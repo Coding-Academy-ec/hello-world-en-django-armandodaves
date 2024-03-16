@@ -1,4 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# define una función llamada hello_world que utilice HttpResponse para devolver el mensaje ¡Hola Mundo!.
+# Create your views here.
+def hello_world(request):
+    return HttpResponse('<h1>¡Hola Mundo!<h1>')
